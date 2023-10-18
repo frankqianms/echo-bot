@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "groupName": {
+            "value": ""
+        },
+        "groupLocation": {
+            "value": ""
+        },
+        "azureBotId": {
+            "value": "echo-bot-10091439"
+        },
+        "azureBotSku": {
+            "value": "S1"
+        },
+        "azureBotRegion": {
+            "value": "global"
+        },
+        "botEndpoint": {
+            "value": ""
+        },
+        "appId": {
+            "value": "d62f20b6-d7c4-4633-b35c-49a17537d80b"
+        },
+        "appType": {
+            "value": "MultiTenant"
+        }
+    }
+}
