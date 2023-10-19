@@ -1,8 +1,9 @@
-env/.env.dev
-env/.env.dev.user
+# TeamsFx files
+env
+env/.env.*.user
 env/.env.local
-env/.env.local.user
-env/
 .env
+teams_app_manifest/build
 
+# virtual environment
 .venv/
