@@ -1,0 +1,8 @@
+env/.env.dev
+env/.env.dev.user
+env/.env.local
+env/.env.local.user
+env/
+.env
+
+.venv/

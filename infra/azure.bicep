@@ -42,6 +42,7 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
   properties: {
     serverFarmId: serverfarm.id
     siteConfig: {
+      appCommandLine: 'pip install -r requirements.txt && gunicorn app:app'
       linuxFxVersion: pythonVersion
       appSettings: [
         {
