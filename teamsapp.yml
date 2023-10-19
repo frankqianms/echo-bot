@@ -80,13 +80,6 @@ provision:
 
 # Triggered when 'teamsfx deploy' is executed
 deploy:
-  # Generate runtime environment variables
-  - uses: file/createOrUpdateEnvironmentFile
-    with:
-      target: ./.env
-      envs:
-        MicrosoftAppId: ${{BOT_ID}}
-        MicrosoftAppPassword: ${{SECRET_BOT_PASSWORD}}
   # Run npm command
   # - uses: script
   #   with:

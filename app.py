@@ -79,7 +79,7 @@ async def messages():
     logging.basicConfig(level=logging.INFO)
 
     # Log the request JSON
-    logging.info(request.json)
+    # logging.info(request.json)
     # logging.info(request.headers)
     # file = open("request.txt", "w")  
     # file.write(request.json)  
@@ -89,7 +89,9 @@ async def messages():
 
     auth_header = request.headers['Authorization'] if 'Authorization' in request.headers else ''
     claims = await decode_auth_header(ADAPTER, activity, auth_header, CONFIG.APP_ID)
-    logging.info(claims)
+    logging.info('claims.aud: ' + claims)
+    logging.info('appid: ' + CONFIG.APP_ID)
+    logging.info('claims.aud==appid' if CONFIG.APP_ID==claims else 'claims.aud!=appid')
     response = await ADAPTER.process_activity(activity, auth_header, BOT.on_message_activity)
     if response:
         return jsonify(response.body), response.status
