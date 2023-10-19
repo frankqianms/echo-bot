@@ -80,6 +80,7 @@ async def messages():
 
     # Log the request JSON
     # logging.info(request.json)
+    # logging.info(request.json)
     # logging.info(request.headers)
     # file = open("request.txt", "w")  
     # file.write(request.json)  
