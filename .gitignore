@@ -5,8 +5,9 @@ env/.env.local
 .env
 teams_app_manifest/build
 
-# virtual environment
+# python virtual environment
 .venv/
+__pycache__/
 
 # others
 .deployment/
