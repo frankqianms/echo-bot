@@ -3,9 +3,9 @@
 # Licensed under the MIT License.
 
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 """ Bot Configuration """
 

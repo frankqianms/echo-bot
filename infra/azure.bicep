@@ -42,20 +42,12 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
   properties: {
     serverFarmId: serverfarm.id
     siteConfig: {
-      appCommandLine: 'pip install -r requirements.txt && gunicorn app:app'
+      // appCommandLine: 'pip install -r requirements.txt && gunicorn app:app'
       linuxFxVersion: pythonVersion
       appSettings: [
         {
-          name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: '1' // Run Azure APP Service from a package file
-        }
-        {
           name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'
           value: 'true'
-        }
-        {
-          name: 'RUNNING_ON_AZURE'
-          value: '1'
         }
         {
           name: 'BOT_ID'
